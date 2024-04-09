@@ -1,0 +1,55 @@
+﻿<Window x:Class="ChessProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChessProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="438" Width="416" ResizeMode="CanMinimize" MouseMove="Window_MouseMove">
+    <Grid>
+        <Image Name="MyBoard" Source="Assets/Board.png" Stretch="Fill"/>
+        <Grid Name="ramka">
+            <Image x:Name="wp1" Source="Assets/PawnW.png" Margin="0,300,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wp1_MouseDown" MouseUp="wp1_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wp2" Source="Assets/PawnW.png" Margin="50,300,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wp2_MouseDown" MouseUp="wp2_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wp3" Source="Assets/PawnW.png" Margin="100,300,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wp3_MouseDown" MouseUp="wp3_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wp4" Source="Assets/PawnW.png" Margin="150,300,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wp4_MouseDown" MouseUp="wp4_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wp5" Source="Assets/PawnW.png" Margin="200,300,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wp5_MouseDown" MouseUp="wp5_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wp6" Source="Assets/PawnW.png" Margin="250,300,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wp6_MouseDown" MouseUp="wp6_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wp7" Source="Assets/PawnW.png" Margin="300,300,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wp7_MouseDown" MouseUp="wp7_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wp8" Source="Assets/PawnW.png" Margin="350,300,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wp8_MouseDown" MouseUp="wp8_MouseUp" Cursor="Hand"/>
+
+            <Image x:Name="wr1" Source="Assets/RookW.png" Margin="0,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wr1_MouseDown" MouseUp="wr1_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wn1" Source="Assets/KnightW.png" Margin="50,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wn1_MouseDown" MouseUp="wn1_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wb1" Source="Assets/BishopW.png" Margin="100,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wb1_MouseDown" MouseUp="wb1_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wq" Source="Assets/QueenW.png" Margin="150,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50" MouseDown="wq_MouseDown" MouseUp="wq_MouseUp" Cursor="Hand" RenderTransformOrigin="0.934,3.045"/>
+            <Image x:Name="wk" Source="Assets/KingW.png" Margin="200,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50" MouseDown="wk_MouseDown" MouseUp="wk_MouseUp" Cursor="Hand" RenderTransformOrigin="0.934,3.045"/>
+            <Image x:Name="wb2" Source="Assets/BishopW.png" Margin="250,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wb2_MouseDown" MouseUp="wb2_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wn2" Source="Assets/KnightW.png" Margin="300,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wn2_MouseDown" MouseUp="wn2_MouseUp" Cursor="Hand"/>
+            <Image x:Name="wr2" Source="Assets/RookW.png" Margin="350,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="wr2_MouseDown" MouseUp="wr2_MouseUp" Cursor="Hand"/>
+
+
+
+            <Image x:Name="bp1" Source="Assets/PawnB.png" Margin="0,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bp1_MouseDown" MouseUp="bp1_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bp2" Source="Assets/PawnB.png" Margin="50,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bp2_MouseDown" MouseUp="bp2_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bp3" Source="Assets/PawnB.png" Margin="100,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bp3_MouseDown" MouseUp="bp3_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bp4" Source="Assets/PawnB.png" Margin="150,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bp4_MouseDown" MouseUp="bp4_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bp5" Source="Assets/PawnB.png" Margin="200,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bp5_MouseDown" MouseUp="bp5_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bp6" Source="Assets/PawnB.png" Margin="250,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bp6_MouseDown" MouseUp="bp6_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bp7" Source="Assets/PawnB.png" Margin="300,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bp7_MouseDown" MouseUp="bp7_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bp8" Source="Assets/PawnB.png" Margin="350,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bp8_MouseDown" MouseUp="bp8_MouseUp" Cursor="Hand"/>
+
+            <Image x:Name="br1" Source="Assets/RookB.png" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="br1_MouseDown" MouseUp="br1_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bn1" Source="Assets/KnightB.png" Margin="50,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bn1_MouseDown" MouseUp="bn1_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bb1" Source="Assets/BishopB.png" Margin="100,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bb1_MouseDown" MouseUp="bb1_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bq" Source="Assets/QueenB.png" Margin="150,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50" MouseDown="bq_MouseDown" MouseUp="bq_MouseUp" Cursor="Hand" RenderTransformOrigin="0.934,3.045"/>
+            <Image x:Name="bk" Source="Assets/KingB.png" Margin="200,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50" MouseDown="bk_MouseDown" MouseUp="bk_MouseUp" Cursor="Hand" RenderTransformOrigin="0.934,3.045"/>
+            <Image x:Name="bb2" Source="Assets/BishopB.png" Margin="250,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bb2_MouseDown" MouseUp="bb2_MouseUp" Cursor="Hand"/>
+            <Image x:Name="bn2" Source="Assets/KnightB.png" Margin="300,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="bn2_MouseDown" MouseUp="bn2_MouseUp" Cursor="Hand"/>
+            <Image x:Name="br2" Source="Assets/RookB.png" Margin="350,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="50" Height="50"  MouseDown="br2_MouseDown" MouseUp="br2_MouseUp" Cursor="Hand"/>
+
+
+        </Grid>
+    </Grid>
+
+
+</Window>
